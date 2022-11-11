@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <p>Tc. Bs.<input type="number" v-model="tipoCambio"></p>
+        <p>Usd.: <input type="number" v-model="usd"></p>
+        <p>{{usd}} USD. son: {{ calculo }} Bs.</p>
+    </div>
+
+    <script>
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                tipoCambio: 6.69,
+                usd: 10
+            },
+            computed:{
+                calculo(){
+                    return this.tipoCambio * this.usd;
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

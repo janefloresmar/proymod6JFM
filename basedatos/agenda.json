@@ -1,0 +1,27 @@
+{
+  "persona": [
+    {
+      "id": 1,
+      "nombre": "Carlos Bustamante",
+      "direccion": "Av. Libertador 222"
+    },
+    {
+      "id": 2,
+      "nombre": "Juan Ventura",
+      "direccion": "Av Ayacucho 132"
+    },
+    {
+      "id": 3,
+      "nombre": "Maria Arnez",
+      "direccion": "Av. Heroninas 444"
+    }
+  ],
+  "telefono": [
+    {
+      "id": 1,
+      "numero": 72541258,
+      "descripcion": "personal",
+      "personaId": 1
+    }
+  ]
+}
